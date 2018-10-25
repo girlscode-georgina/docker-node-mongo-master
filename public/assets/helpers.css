@@ -1,0 +1,193 @@
+/* CUSTOM */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+
+header {
+}
+  .hero {
+    height: 880px;
+    background: #c2c5c2 url(../public/images/landing_desktop.jpg) top / cover;
+
+  }
+
+  /* nav:hover{
+    background-color: #c2c5c2;
+  } */
+
+  .selected {
+    text-decoration: none;
+    color: #bb6c5c;
+  }
+
+ .picker {
+    color: #a6aba7;
+  }
+
+
+
+  button.selected {
+    /* font-size: 14px; */
+  }
+
+   button.picker {
+    background-color: #f6f6f6;
+  }
+
+  .container {
+    background-color: #f0f0f0;
+    padding: 0.8em;
+  }
+
+  @media (min-resolution: 144dpi) {
+
+    nav {
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      display: flex;
+  	  justify-content: space-between;
+  	  /*max-width: 960px;*/
+  	  margin: 0 auto;
+  	  height: 60px;
+      color: white;
+      font-size: 12px;
+      padding: 0 2em;
+    }
+
+
+    /* LEFT ITEMS */
+
+.nav {
+	display: flex;
+  color: white;
+}
+
+.brand {
+	margin: auto 1em;
+	text-align: center;
+	align-content: center;
+}
+
+.brand a {
+	font-size: 24px;
+}
+
+a{
+  text-decoration: none;
+    color: white;
+}
+
+.nav li a:hover, .log a:hover {
+  text-decoration: none;
+  color: #bb6c5c;
+}
+
+
+.main-nav {
+	margin: auto 1em;
+	list-style: none;
+}
+
+.main-nav li {
+	padding: 0.3em 0.5em;
+	display: inline;
+	margin-right: 1em;
+}
+
+/* RIGHT ITEMS
+	- you could put them in their own div,
+	  like the ones one the left.		*/
+
+nav .log {
+	margin: auto 0;
+	list-style: none;
+}
+
+nav .log li {
+	padding: 0.3em 0.5em;
+	margin-left: 1em;
+	display: inline;
+}
+
+main {
+    padding: 1em 2em;
+}
+    .hero {
+      height: 580px;
+    }
+
+    .selected{
+      font-weight: 700;
+    }
+
+    .card, .card button {
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .spacing {
+      max-width: 500px;
+    }
+
+    .card {
+      margin: 5.5em auto;
+      padding: 2.5em 0.5em;
+      max-width: 375px;
+      /* background: rgba(255, 255, 255, 0.2); */
+    }
+
+    .card button {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      padding: 0.75em 1.1em;
+      background: #bb6c5c;
+      font-weight: 500;
+    }
+
+    button {
+      border: none;
+      border-radius: 1.2em;
+      background-color: #f0f0f0;
+      padding: 0.5em 1em 0.3em;
+    }
+
+    .item-nav button {
+      border-radius: 0.5em 0.5em 0 0;
+      margin-right: 0.15em;
+    }
+
+  }
+  @media (max-width: 1024px){
+    .hero {
+      background: #a6aba7 url(../public/images/landing_tablet.jpg) top / cover;
+    }
+  }
+  @media (max-width: 375px){
+    .hero {
+      background: #a6aba7 url(../public/images/landing_mobile.jpg) top / cover;
+
+    }
+  }
+
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+
+	}
+  .hero {
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+.mobile {
+  display: none;
+}

@@ -1,0 +1,21 @@
+<% include partials/navbar %>
+    <div class="gallery">
+        <h1><%= coffeeshop.name %></h1>
+        <p><%= coffeeshop.street + " " + coffeeshop.zip + " " + coffeeshop.town; %></p>
+      </div>
+      <h2>Comments:</h2>
+      <% coffeeshop.comments.forEach(function(comment) { %>
+            <div class="container">
+              <p><strong><%= comment.author %> </strong> - <%= comment.text %></p>
+
+        </div>
+    <%  }); %>
+    <h3>Add a comment:</h3>
+    <form action="/coffeeshops/:name" method="post">
+      <input type="text" name="author" value="" placeholder="name">
+      <input type="text" name="comment" value="" placeholder="comment">
+      <button type="button" name="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
